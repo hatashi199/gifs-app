@@ -4,6 +4,8 @@
 			type="text"
 			class="w-full bg-darkSidebar flex bg-transparent pl-2 text-white outline-0"
 			placeholder="Search GIFs"
+			(keyup.enter)="searchTag()"
+			#valueInputSearch
 		/>
 		<button class="p-2 rounded-full">
 			<img

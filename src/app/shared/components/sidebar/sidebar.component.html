@@ -4,8 +4,11 @@
 >
 	<h1>Gifs App</h1>
 	<div class="flex flex-col gap-y-2 text-mainBlack">
-		<button class="bg-white rounded-md py-1">Dragon Ball Z</button>
-		<button class="bg-white rounded-md py-1">One Piece</button>
-		<button class="bg-white rounded-md py-1">Real Madrid</button>
+		<button
+			*ngFor="let tag of getTags"
+			class="bg-white rounded-md py-1"
+		>
+			{{ tag | titlecase }}
+		</button>
 	</div>
 </div>
