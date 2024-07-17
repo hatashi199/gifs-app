@@ -1,0 +1,9 @@
+<div class="flex flex-col w-full max-w-[180px] rounded-md overflow-hidden">
+	<shared-lazy-image
+		[url]="gif.images.downsized_medium.url"
+		[alt]="gif.alt_text"
+	></shared-lazy-image>
+	<div class="flex flex-col gap-y-2 bg-white p-4">
+		<h3>{{ gif.title }}</h3>
+	</div>
+</div>
