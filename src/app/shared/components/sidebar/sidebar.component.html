@@ -1,8 +1,8 @@
 <div
-	class="flex flex-col gap-y-4 bg-darkSidebar text-white px-6"
+	class="flex flex-col gap-y-4 bg-darkSidebar text-white p-6 absolute z-10 t-0"
 	id="sidebar"
+	[ngStyle]="{ left: sidebarActive ? '0' : '-25%' }"
 >
-	<h1>Gifs App</h1>
 	<div class="flex flex-col gap-y-2 text-mainBlack">
 		<button
 			*ngFor="let tag of getTags"

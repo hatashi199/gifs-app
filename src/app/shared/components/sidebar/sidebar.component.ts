@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GifsService } from '../../../gifs/services/gifs.service';
 
 @Component({
@@ -7,6 +7,9 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 	styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+	@Input()
+	public sidebarActive: boolean = false;
+
 	constructor(private gifsService: GifsService) {}
 
 	get getTags(): string[] {

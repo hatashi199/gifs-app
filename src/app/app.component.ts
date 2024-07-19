@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'gifs-app';
+
+	public sidebarActive: boolean = false;
+
+	setSideActive(active: boolean) {
+		this.sidebarActive = active;
+	}
 }

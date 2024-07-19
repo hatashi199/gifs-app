@@ -1,4 +1,10 @@
-<div class="flex">
-	<shared-sidebar></shared-sidebar>
+<div class="relative">
+	<div class="flex items-center bg-darkSidebar max-h-[80px] h-[80px]">
+		<shared-hamburger-menu
+			class="max-w-[1200px] w-full mx-auto"
+			(sidebarActive)="setSideActive($event)"
+		></shared-hamburger-menu>
+	</div>
+	<shared-sidebar [sidebarActive]="sidebarActive"></shared-sidebar>
 	<gifs-homepage-home></gifs-homepage-home>
 </div>
