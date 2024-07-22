@@ -1,12 +1,12 @@
 <div
-	class="flex flex-col gap-y-4 bg-darkSidebar text-white p-6 absolute z-10 t-0"
+	class="flex flex-col gap-y-4 bg-lightSecondary dark:bg-darkSecondary text-white p-6 fixed z-10 t-0"
 	id="sidebar"
-	[ngStyle]="{ left: sidebarActive ? '0' : '-25%' }"
+	[ngStyle]="{ left: sidebarActive ? '0' : '-400vw' }"
 >
 	<div class="flex flex-col gap-y-2 text-mainBlack">
 		<button
 			*ngFor="let tag of getTags"
-			class="bg-white rounded-md py-1"
+			class="bg-darkPrimary dark:bg-lightPrimary text-mainWhite dark:text-mainBlack rounded-md py-1"
 			(click)="searchTagSelected(tag)"
 		>
 			{{ tag | titlecase }}

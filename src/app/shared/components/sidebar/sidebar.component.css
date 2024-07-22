@@ -1,5 +1,6 @@
 #sidebar {
-	width: 25vw;
+	max-width: 400px;
+	width: 100%;
 	height: calc(100vh - 80px);
 	transition: left 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

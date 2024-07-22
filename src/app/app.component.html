@@ -1,9 +1,11 @@
 <div class="relative">
-	<div class="flex items-center bg-darkSidebar max-h-[80px] h-[80px]">
+	<div
+		class="flex items-center justify-between bg-lightSecondary dark:bg-darkSecondary px-6 max-h-[80px] h-[80px] sticky top-0 z-10"
+	>
 		<shared-hamburger-menu
-			class="max-w-[1200px] w-full mx-auto"
 			(sidebarActive)="setSideActive($event)"
 		></shared-hamburger-menu>
+		<shared-darklight-mode></shared-darklight-mode>
 	</div>
 	<shared-sidebar [sidebarActive]="sidebarActive"></shared-sidebar>
 	<gifs-homepage-home></gifs-homepage-home>

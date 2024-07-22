@@ -1,0 +1,12 @@
+<button (click)="setTheme()">
+	<img
+		*ngIf="!saveTheme || saveTheme === 'light'"
+		src="assets/icons/light.svg"
+		alt="light-icon"
+	/>
+	<img
+		*ngIf="saveTheme === 'dark'"
+		src="assets/icons/dark.svg"
+		alt="dark-icon"
+	/>
+</button>

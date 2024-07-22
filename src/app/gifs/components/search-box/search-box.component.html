@@ -1,8 +1,10 @@
 <div class="flex items-center justify-center">
-	<div class="flex rounded-full px-2 w-full max-w-[700px] bg-darkSidebar">
+	<div
+		class="flex rounded-full w-full px-4 mx-6 max-w-[700px] bg-lightSecondary dark:bg-darkSecondary"
+	>
 		<input
 			type="text"
-			class="w-full bg-darkSidebar flex bg-transparent pl-2 text-white outline-0"
+			class="w-full flex bg-transparent pl-2 text-mainBlack dark:text-mainWhite outline-0"
 			placeholder="Search GIFs"
 			(keyup.enter)="searchTag()"
 			#valueInputSearch
