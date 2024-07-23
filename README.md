@@ -1,27 +1,22 @@
 # GifsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Este es mi primer proyecto realizado en Angular, para poner en práctica lo aprendido hasta el momento de forma autodidacta. Se trata de una pequeña app donde a través de una búsqueda realizada por el usuario, me muestre 10 gifs relacionados con la búsqueda, guardando las búsquedas realizadas en un historial.
 
-## Development server
+## Variables de entorno
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Utilizo do varibles de entorno que son las siguientes:
 
-## Code scaffolding
+```typescript
+	GIFS_API_KEY: 'your_giphy_api_key',
+	SEARCH_GIFS_URL: 'https://api.giphy.com/v1/gifs/search'
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Una es la api key de Giphy y el otro es el endpoint utilizado para realizar la consulta a la API.
 
-## Build
+## Servidor de desarrollo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para lanzar la aplicación en modo desarrollo debes tener Angular CLI instalado y lanazar el comando `ng serve` y abrir en el navegador la url `http://localhost:4200`.
 
-## Running unit tests
+## Generar build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para generar el build de la app y llevarlo a producción se utiliza la linea de comandos del Angula CLI `ng build`.
